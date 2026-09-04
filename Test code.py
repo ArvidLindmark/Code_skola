@@ -107,22 +107,53 @@
 
 #Enkel miniräknare
 
-tal_1 = int(input("Välj ett tal: "))
-tal_2 = int(input("Välj ett tal: "))
+#tal_1 = int(input("Välj ett tal: "))
+#tal_2 = int(input("Välj ett tal: "))
 
-räknesätt = int(input("välj ett räknesätt, 1 för plus, 2 för minus, 3 för delat, 4 för gånger: "))
+#räknesätt = int(input("välj ett räknesätt, 1 för plus, 2 för minus, 3 för delat, 4 för gånger: "))
 
-if räknesätt == 1:
-    print( tal_1 + tal_2 )
+#if räknesätt == 1:
+    #print( tal_1 + tal_2 )
 
-elif räknesätt == 2:
-    print( tal_1 - tal_2 )
+#elif räknesätt == 2:
+    #print( tal_1 - tal_2 )
 
-elif räknesätt == 3:
-    print( tal_1 / tal_2 )
+#elif räknesätt == 3:
+    #print( tal_1 / tal_2 )
 
-elif räknesätt == 4:
-    print( tal_1 * tal_2 )
+#elif räknesätt == 4:
+    #print( tal_1 * tal_2 )
 
-else:
-    print("felaktigt svar ")
+#else:
+    #print("felaktigt svar ")'
+
+##################################################################
+
+#Gissa talet
+
+import random
+
+number_of_trys = 0
+
+hidden_number = random.randint(1, 100)
+
+guess = int(input("youre guess: "))
+
+
+
+
+def func(number_of_trys, hidden_number, guess):
+   
+    if guess == hidden_number:
+        print("You guess the right number")
+        print("You took", number_of_trys, "number of tries")
+        
+    elif guess > number_of_trys:
+        print("Your guess is to high")
+
+    elif guess < number_of_trys:
+        print("Your guess is to low")
+
+
+while number_of_trys < 12:
+    func()
