@@ -191,13 +191,57 @@
 
 #multiplikations tabell
 
-talet = int(input("Skriv ett heltal:"))
-gånger = 1
+#talet = int(input("Skriv ett heltal:"))
+#gånger = 1
 
-while gånger < 11:
+#while gånger < 11:
     
-    multiplikation = talet * gånger
-    gånger = gånger + 1
+#    multiplikation = talet * gånger
+#    gånger = gånger + 1
 
-    print("[", multiplikation,"]")
+#    print("[", multiplikation,"]")
     
+##################################################################
+
+#uppgift 5.1 
+
+#print("Du har en \u265a och \u03C0")
+
+####################################################################
+
+#uppgift 5.2
+
+#ordet = input("skriv ett ord")
+
+#if ordet[-1] == ordet[0]:
+ #   print("ditt ord är ett palindrom")
+#else:
+ #   print("du skrev ett vanligt ord")
+
+##################################################################
+
+#uppgift 5.3
+
+#pytonorm = "pytonorm"
+
+#print(pytonorm[2:5])
+#print(pytonorm[4:8])
+#print(pytonorm[4:1:-1])
+
+###################################################################
+
+#s = input("skriv en text: ")
+#i = 0
+#s2 = s[::-1]
+
+#for c in s2:
+#    if c == " " or c == " \t ":
+#        break
+#    i = i + 1
+
+#if i < len(s2):
+#    print(f"första vita tecken finns på plats nr {i}")
+#else:
+#    print("Inget vitt tecken")
+
+##################################################################

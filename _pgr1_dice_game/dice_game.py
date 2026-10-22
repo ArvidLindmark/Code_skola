@@ -1,7 +1,7 @@
 import random
 import sys
 
-roll_again = True
+
 
 start = int(input("Bet money and roll the dice and get as close as you can to 21 total score, Start game 1 yes, 2 no:"))
 
@@ -10,10 +10,9 @@ total_score = 0
 rounds = 3
 win = False
 game_on = True
+roll_again = True
 
 if start == 1:
-
-    
 
     while game_on == True:
 
@@ -80,6 +79,7 @@ if start == 1:
                         money = money - bet
                         roll_again = True
                         total_score = 0
+
         else:
             print(f"End of game, you won {money}$")
             sys.exit()      
